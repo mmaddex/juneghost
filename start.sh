@@ -1,6 +1,8 @@
 #!/bin/bash
 set -o errexit
 
+echo $GHOST_INSTALL
+echo $baseDir
 baseDir="$GHOST_INSTALL/content.orig"
 	for src in "$baseDir"/*/ "$baseDir"/themes/*; do
 		src="${src%/}"

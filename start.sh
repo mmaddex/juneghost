@@ -10,7 +10,7 @@ baseDir="$GHOST_INSTALL/content.orig"
 			tar -cC "$(dirname "$src")" "$(basename "$src")" | tar -xC "$(dirname "$target")"
 		fi
 	done
-npm i -g node knex-migrator
+npm i -g knex-migrator
 node knex-migrator rollback
 
 # update the URL

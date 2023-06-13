@@ -7,6 +7,7 @@ baseDir="$GHOST_INSTALL/content.orig"
 	for src in "$baseDir"/*/ "$baseDir"/themes/*; do
 		src="${src%/}"
 		target="$GHOST_CONTENT/${src#$baseDir/}"
+		echo $target
 		mkdir -p "$(dirname "$target")"
 		if [ ! -e "$target" ]; then
 		        echo "HERE HEAR"

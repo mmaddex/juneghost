@@ -11,6 +11,8 @@ baseDir="$GHOST_INSTALL/content.orig"
 		fi
 	done
 
+yarn knex-migrator rollback
+
 # update the URL
 node updateConfig.js
 
